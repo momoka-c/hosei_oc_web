@@ -19,8 +19,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 8px 16px;
-  
+  padding: 80px 16px;
+
+}
+
+.header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* ------- ハンバーガーアイコン ------- */
@@ -125,6 +137,20 @@ section p {
   max-width: 90%;
   margin-bottom: 70px;
 }
+
+.section1-title {
+  display: flex;
+  justify-content: center;  /* 水平中央 */
+  align-items: center;      /* 垂直中央（必要なら） */
+  padding: 2rem 0;          /* 上下余白（任意） */
+}
+
+.section1-title img {
+  width: 80%;               /* 横幅80% */
+  height: auto;             /* 高さは自動で比率維持 */
+  display: block;
+}
+
 
 .tab-buttons {
   display: flex;

@@ -1,0 +1,178 @@
+/* フォント読み込み */
+@import url('https://fonts.googleapis.com/css2?family=Bicyclette&family=Zen+Kaku+Gothic+New&display=swap');
+
+/* ベース設定 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zen Kaku Gothic New', 'Bicyclette', sans-serif;
+  color: #C4367B;
+  background-color: #FBF9F1;
+}
+
+/* ヘッダー背景画像 */
+header {
+  background-image: url('2025ocwebBack.png');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+/* ------- ハンバーガーアイコン ------- */
+
+.menu-icon {
+  width: 24px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  height: 2px;
+  background-color: #E2338C;
+  border-radius: 1px;
+}
+/* ------- モバイルメニュー（右からスライド） ------- */
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 60%;
+  background-color: #FBF9F1BF; /* BF = 約75%不透明（16進で191） */
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 20px;
+ 
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  height: auto;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ------- メニュー内リンク ------- */
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.mobile-menu li {
+  margin: 16px 0;
+}
+
+.mobile-menu a {
+  text-decoration: underline;
+  color: #E2338C;
+  font-size: 16px;
+}
+
+/* ------- メインセクション（遷移先） ------- */
+main {
+  padding-top: 80px;
+}
+
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #ccc;
+  min-height: 100vh;
+}
+
+/* トップのタイトル（中央寄せ） */
+header h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  font-family: 'Bicyclette', sans-serif;
+}
+
+/* サブテキスト（左寄せ） */
+header p {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0rem auto 0;
+  padding: 0 3rem;
+  line-height: 1.8;
+}
+
+/* セクション全体のパディング調整 */
+section {
+  padding: 4rem 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+section p {
+  padding: 0rem 0.2rem;
+  max-width: 90%;
+  margin-bottom: 70px;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 50px;
+}
+
+.tab-buttons button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #F5BDD5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tab-buttons button.active {
+  color: #C4367B; /* アクティブ色 */
+}
+
+.tab-content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tab-panel {
+  display: none;
+  max-width: 105%;
+  height: auto;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+/* レスポンシブ対応（オプション） */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+}

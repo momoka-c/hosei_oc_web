@@ -24,7 +24,7 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
 const buttons = document.querySelectorAll('.tab-buttons button');
 const panels = document.querySelectorAll('.tab-panel');
 
-// ✅ 最初に「常時開催」ボタンをアクティブにする
+// 最初に「常時開催」ボタンをアクティブにする
 document.querySelector('[data-tab="always"]').classList.add('active');
 
 buttons.forEach(button => {

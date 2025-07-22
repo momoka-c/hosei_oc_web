@@ -134,6 +134,12 @@ section p {
   margin-bottom: 70px;
 }
 
+.top-section {
+  padding: 2rem 1rem;   /* 上下の余白を調整 */
+  max-height: 16vh;     /* 高さを画面の60%以内に制限（必要なら値を調整） */
+  overflow: hidden;     /* 高さを超える内容を非表示（必要に応じて） */
+}
+
 .section1-title {
   display: flex;
   justify-content:left;  /* 水平中央 */
@@ -145,6 +151,11 @@ section p {
   width: 100%;               /* 横幅100% */
   height: auto;             /* 高さは自動で比率維持 */
   display: block;
+}
+#section2 {
+  min-height: 78vh; /* 画面の高さぴったり（必要に応じて調整） */
+  padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 

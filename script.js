@@ -23,9 +23,19 @@ document.querySelectorAll('.mobile-menu a').forEach(link => {
 });
 const buttons = document.querySelectorAll('.tab-buttons button');
 const panels = document.querySelectorAll('.tab-panel');
+const section2 = document.getElementById('section2');
 
 // 最初に「常時開催」ボタンをアクティブにする
 document.querySelector('[data-tab="always"]').classList.add('active');
+
+// 関数：高さを画像に合わせて更新
+function adjustSectionHeight() {
+  const activePanel = document.querySelector('.tab-panel.active');
+  section2.style.height = activePanel.offsetHeight + 200 + 'px'; // 余白込み
+}
+
+// 初期表示時に高さ調整
+window.addEventListener('load', adjustSectionHeight);
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -43,5 +53,8 @@ buttons.forEach(button => {
         panel.classList.remove('active');
       }
     });
+
+    // 高さの調整（遅延で少し待ってから）
+    setTimeout(adjustSectionHeight, 100);
   });
 });

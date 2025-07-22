@@ -136,7 +136,7 @@ section p {
 
 .top-section {
   padding: 2rem 1rem;   /* 上下の余白を調整 */
-  max-height: 16vh;     /* 高さを画面の60%以内に制限（必要なら値を調整） */
+  height: 230px; 
   overflow: hidden;     /* 高さを超える内容を非表示（必要に応じて） */
 }
 
@@ -152,48 +152,63 @@ section p {
   height: auto;             /* 高さは自動で比率維持 */
   display: block;
 }
+/* セクション全体：高さは画像に合わせて自動調整されるように */
 #section2 {
-  min-height: 78vh; /* 画面の高さぴったり（必要に応じて調整） */
-  padding: 2rem 1rem;
+  height: auto;
+  padding: 2rem 1rem; /* 上下左右の余白 */
   box-sizing: border-box;
 }
 
-
+/* タブボタンのレイアウト（中央揃え） */
 .tab-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0px;
   margin-top: 50px;
+  gap: 1rem;  /* ← ここでボタンの間隔を設定 */
 }
 
+/* タブボタンのスタイル */
 .tab-buttons button {
-  background: none;
-  border: none;
-  font-size: 16px;
-  color: #F5BDD5;
-  text-decoration: underline;
+  background-color:#FBF9F1;
+  border: 2px solid #C4367B;
+  font-size: 18px;
+  color: #C4367B;
   cursor: pointer;
+  border-radius: 1rem;           /* ← 角を丸める（1rem ≒ 16px） */
+  padding: 0.2rem 1.5rem;
 }
 
+/* アクティブ状態のボタン */
 .tab-buttons button.active {
-  color: #C4367B; /* アクティブ色 */
+  background-color:#C4367B;
+  border: 2px solid #C4367B;
+  font-size: 18px;
+  color: #FBF9F1;
+  cursor: pointer;
+  border-radius: 1rem;           /* ← 角を丸める（1rem ≒ 16px） */
 }
 
+/* タブ内の画像表示エリア */
 .tab-content {
   margin-top: 20px;
+  margin-bottom: 40px; /* ← 画像の下に余白を追加 */
   text-align: center;
 }
 
+
+/* タブの画像：非表示が初期 */
 .tab-panel {
   display: none;
-  max-width: 105%;
+  max-width: 100%;
   height: auto;
 }
 
+/* アクティブな画像だけ表示 */
 .tab-panel.active {
   display: block;
 }
+
 
 /* レスポンシブ対応（オプション） */
 @media (max-width: 768px) {

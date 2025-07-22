@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Zen Kaku Gothic New', 'Bicyclette', sans-serif;
+  letter-spacing: 0.1em; /* ← 適度に文字の間隔を広げる */
   color: #C4367B;
   background-color: #FBF9F1;
 }
@@ -56,11 +57,11 @@ header {
   position: fixed;
   top: 60px;
   right: 0;
-  width: 60%;
+  width:100%;
   background-color: #FBF9F1BF; /* BF = 約75%不透明（16進で191） */
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: left;
   padding: 20px;
  
 
@@ -92,7 +93,7 @@ header {
 .mobile-menu a {
   text-decoration: underline;
   color: #E2338C;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* ------- メインセクション（遷移先） ------- */
@@ -146,7 +147,7 @@ section p {
 }
 
 .section1-title img {
-  width: 80%;               /* 横幅80% */
+  width: 100%;               /* 横幅100% */
   height: auto;             /* 高さは自動で比率維持 */
   display: block;
 }

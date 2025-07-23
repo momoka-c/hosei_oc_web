@@ -248,7 +248,7 @@ section p {
 /* 🔲 テキストボックス（リンク一覧） */
 .link-box {
   text-align: right;        /* 全体を右寄せ */
-  max-width: 80%;
+  max-width: 85%;
   margin: 6rem 0 0 auto;
   margin-bottom: 30px;
 }

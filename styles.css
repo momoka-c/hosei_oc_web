@@ -152,12 +152,21 @@ section p {
   height: auto;             /* 高さは自動で比率維持 */
   display: block;
 }
+
+#section1 p {
+  max-width: 85%;
+  margin: 0 auto;
+  line-height: 1.8;
+  margin-left: 18px;
+}
+
 /* セクション全体：高さは画像に合わせて自動調整されるように */
 #section2 {
   height: auto;
   padding: 2rem 1rem; /* 上下左右の余白 */
   box-sizing: border-box;
 }
+
 
 /* タブボタンのレイアウト（中央揃え） */
 .tab-buttons {
@@ -209,6 +218,58 @@ section p {
   display: block;
 }
 
+#section3 {
+  height: auto;
+  padding: 2rem 1rem; /* 上下左右の余白 */
+  box-sizing: border-box;
+  background-color: #E2338C;
+}
+
+.section3-title {
+  display: flex;
+  justify-content:left;  /* 水平中央 */
+  align-items: center;      /* 垂直中央（必要なら） */
+  padding: 2rem 0;          /* 上下余白（任意） */
+}
+
+.section3-title img {
+  width: 100%;               /* 横幅100% */
+  height: auto;             /* 高さは自動で比率維持 */
+  display: block;
+}
+
+#section3 p {
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.8;
+  margin-left: 18px;
+  color: #FBF9F1;
+}
+/* 🔲 テキストボックス（リンク一覧） */
+.link-box {
+  text-align: right;        /* 全体を右寄せ */
+  max-width: 80%;
+  margin: 6rem 0 0 auto;
+  margin-bottom: 30px;
+}
+
+/* 🔗 リストの見た目を整える */
+.link-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-box li {
+  margin-bottom: 0.5rem;
+}
+
+/* 🔗 リンクスタイル（下線あり、右寄せ） */
+.link-box a {
+  color: #FBF9F1;
+  text-decoration: underline;
+  font-weight: 500;
+}
 
 /* レスポンシブ対応（オプション） */
 @media (max-width: 768px) {

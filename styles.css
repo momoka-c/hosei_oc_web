@@ -57,7 +57,7 @@ header {
   position: fixed;
   top: 60px;
   right: 0;
-  width:100%;
+  width:80%;
   background-color: #FBF9F1BF; /* BF = 約75%不透明（16進で191） */
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@ section p {
 
 .top-section {
   padding: 2rem 1rem;   /* 上下の余白を調整 */
-  height: 230px; 
+  height: 260px; 
   overflow: hidden;     /* 高さを超える内容を非表示（必要に応じて） */
 }
 
@@ -154,10 +154,10 @@ section p {
 }
 
 #section1 p {
-  max-width: 85%;
-  margin: 0 auto;
-  line-height: 1.8;
-  margin-left: 18px;
+  max-width: 80%;
+margin: 0 auto;
+line-height: 1.8;
+margin-left: 18px;
 }
 
 /* セクション全体：高さは画像に合わせて自動調整されるように */
@@ -270,6 +270,110 @@ section p {
   text-decoration: underline;
   font-weight: 500;
 }
+
+#section4 {
+  padding: 3rem 2rem;
+  background-color: #FBF9F1;
+  height: auto;
+}
+
+.section4-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.vertical-tab-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* タブボタン */
+.vertical-tab-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vertical-tab-buttons button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #F5BDD5;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.vertical-tab-buttons button.active {
+  color: #C4367B;
+ 
+}
+
+/* タブ中身 */
+.vertical-tab-content {
+  flex: 1;
+  text-align: center;
+  min-width: 300px;
+}
+
+.tab-panel {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-text-box p {
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #C4367B;
+  font-size: 13px;
+  margin-bottom: 1.5rem; /* ← ここで縦の空白を作る */
+}
+
+.video-section {
+  max-width: 800px;       /* セクション自体の幅を制限 */
+  margin: 2rem auto;      /* 中央寄せ & 上下余白 */
+  padding: 1rem;
+  box-sizing: border-box;
+  border: #C4367B;
+}
+
+.video-section h3 {
+  font-size: 16px;      /* タイトル文字サイズ */
+  margin-bottom: 0.5rem;
+  color: #C4367B;
+}
+
+.video-section p {
+  font-size: 11px;         /* 段落文字サイズ */
+  line-height: 1.8;
+  color: #C4367B;
+  margin-bottom: 1rem;
+  width: 100%;              /* テキストボックスの幅（調整可） */
+  margin-left: auto;       /* 左右中央揃え */
+  margin-right: auto;
+  text-align: center;      /* テキスト中央揃え */
+}
+
+
+.video-section video {
+  width: 100%;            /* 親要素の幅に合わせる */
+  height: auto;           /* アスペクト比を保つ */
+  border-radius: 8px;     /* 角丸（お好みで） */
+  box-shadow: 0 2px 10px #fafafa; /* 軽い影 */
+}
+
 
 /* レスポンシブ対応（オプション） */
 @media (max-width: 768px) {

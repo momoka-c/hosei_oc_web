@@ -58,3 +58,18 @@ buttons.forEach(button => {
     setTimeout(adjustSectionHeight, 100);
   });
 });
+
+const verticalButtons = document.querySelectorAll('.vertical-tab-buttons button');
+const verticalPanels = document.querySelectorAll('.vertical-tab-content .tab-panel');
+
+verticalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const tab = button.getAttribute('data-tab');
+
+    verticalButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    verticalPanels.forEach(panel => panel.classList.remove('active'));
+    document.getElementById(`tab-${tab}`).classList.add('active');
+  });
+});

@@ -374,6 +374,39 @@ margin-left: 18px;
   box-shadow: 0 2px 10px #fafafa; /* 軽い影 */
 }
 
+#tab-qa img {
+  width: 100%;
+  max-width: 600px; /* 適当な最大幅を指定 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* 中央寄せ（任意） */
+}
+
+
+#section5 {
+  padding: 3rem 2rem;
+  background-color: #E2338C;
+  height: auto;
+}
+
+#section5 img {
+  width: 100%;
+  max-width: 800px; /* 画像の最大幅 */
+  height: auto;
+}
+.map-link {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #FBF9F1;
+  transition: color 0.2s;
+}
+
+.map-link:hover {
+  color: #FBF9F1;
+  text-decoration: underline;
+}
+
 
 /* レスポンシブ対応（オプション） */
 @media (max-width: 768px) {

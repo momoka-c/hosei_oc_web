@@ -52,16 +52,16 @@ header {
   background-color: #E2338C;
   border-radius: 1px;
 }
+
 /* ------- モバイルメニュー（右からスライド） ------- */
 .mobile-menu {
   position: fixed;
   top: 60px;
   right: 0;
   width:80%;
-  background-color: #FBF9F1BF; /* BF = 約75%不透明（16進で191） */
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: right;
   padding: 20px;
  
 
@@ -409,6 +409,7 @@ margin-left: 18px;
   background-color: #E2338C;
   height: auto;
 }
+
 
 #section5 img {
   width: 100%;

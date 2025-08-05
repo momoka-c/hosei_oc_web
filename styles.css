@@ -23,7 +23,7 @@ header {
   aspect-ratio: 1080 / 1920;         /* 元画像の比率に合わせて調整（ここ重要） */
 
   position: relative;                /* 子要素（メニューアイコン）を重ねるため */
-
+  padding-top: 24px;
 }
 
 
@@ -48,6 +48,8 @@ header {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  margin-top: 24px;
+  margin-left: 26px;
 }
 
 .menu-icon div {
@@ -138,9 +140,14 @@ section p {
 }
 
 .top-section {
-  padding: 2rem 1rem;   /* 上下の余白を調整 */
-  height: 260px; 
-  overflow: hidden;     /* 高さを超える内容を非表示（必要に応じて） */
+  width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0rem 0.4rem;
+box-sizing: border-box;
+overflow: hidden;
 }
 
 .section1-title {
@@ -345,9 +352,8 @@ margin-left: 18px;
 }
 
 .video-section {
-  max-width: 800px;       /* セクション自体の幅を制限 */
+  max-width: 100%;       /* セクション自体の幅を制限 */
   margin: 2rem auto;      /* 中央寄せ & 上下余白 */
-  padding: 1rem;
   box-sizing: border-box;
   border: #E2338C;
 }
@@ -447,17 +453,33 @@ padding: 7.5px;
   text-decoration: underline;
 }
 
+#section6 {
+  text-align: center;         /* aタグを中央に寄せるための基本設定 */
+  padding: 2rem 1rem;         /* 上下の余白を設定、左右はモバイル向けに */
+  box-sizing: border-box;
+}
+
 .survey-link {
   display: inline-block;
-  color: #C4367B;
-  font-size: 16px;
+  color: #E2338C;
+  font-size: 12px;
   text-decoration: underline;
   margin-top: 1rem;
-  text-align: center;
+  padding: 0.5rem 1rem;
 }
 
 .survey-link:hover {
-  color: #A12C66;
+  color: #E2338C;
+}
+
+.footer-bg {
+  background-image: url('2025ocwebBack2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  aspect-ratio: 1080 / 320;
 }
 
 /* レスポンシブ対応（オプション） */

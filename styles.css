@@ -9,6 +9,7 @@ body {
   letter-spacing: 0.1em; /* ← 適度に文字の間隔を広げる */
   color: #E2338C;
   background-color: #FBF9F1;
+  
 }
 
 /* ヘッダー背景画像 */
@@ -17,14 +18,14 @@ header {
   background-size: contain;      /* ← 横幅優先で、すべての画像が見えるように */
   background-repeat: no-repeat;
   background-position: top center;
-  width: 92vw;
-  height: 29vh;
+  width: 100vw;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 80px 16px;
-  
 }
+
 
 .header-left {
   display: flex;

@@ -14,14 +14,16 @@ body {
 /* ヘッダー背景画像 */
 header {
   background-image: url('2025ocwebBack.png');
-  background-size: cover;
-  background-position: center;
-  height: 40vh;
+  background-size: contain;      /* ← 横幅優先で、すべての画像が見えるように */
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 92vw;
+  height: 29vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 80px 16px;
-
+  
 }
 
 .header-left {
@@ -416,12 +418,19 @@ margin-left: 18px;
   max-width: 800px; /* 画像の最大幅 */
   height: auto;
 }
+
 .map-link {
-  display: inline-block;
-  margin-top: 16px;
-  text-decoration: underline;
-  color: #FBF9F1;
-  transition: color 0.2s;
+display: inline-block;
+margin-top: 16px;
+color: #ffffff;
+transition: color 0.2s;
+border: 1px solid white;
+padding: 7.5px;
+}
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-link:hover {

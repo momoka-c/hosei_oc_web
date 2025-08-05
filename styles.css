@@ -15,15 +15,15 @@ body {
 /* ヘッダー背景画像 */
 header {
   background-image: url('2025ocwebBack.png');
-  background-size: contain;      /* ← 横幅優先で、すべての画像が見えるように */
+  background-size: cover;            /* 横幅100%にフィット、はみ出しをカット */
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: top center;
-  width: 100vw;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 80px 16px;
+
+  width: 100%;
+  aspect-ratio: 1080 / 1920;         /* 元画像の比率に合わせて調整（ここ重要） */
+
+  position: relative;                /* 子要素（メニューアイコン）を重ねるため */
+
 }
 
 
@@ -306,7 +306,7 @@ margin-left: 18px;
 .vertical-tab-buttons button {
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   color: #F5BDD5;
   text-decoration: underline;
   cursor: pointer;

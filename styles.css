@@ -97,7 +97,9 @@ header {
 
 .mobile-menu a {
   text-decoration: underline;
-  color: #4f4b4b;
+  color: #E2338C;
+  background-color: #FBF9F1;
+  padding: 10px 10px;
   font-size: 20px;
 }
 
@@ -466,6 +468,7 @@ padding: 7.5px;
   text-decoration: underline;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
+  font-weight: bold;
 }
 
 .survey-link:hover {
@@ -480,6 +483,17 @@ padding: 7.5px;
   width: 100%;
   height: 400px;
   aspect-ratio: 1080 / 320;
+}
+
+.instagram-icon img {
+  width: 40px;     /* アイコンサイズ */
+  height: 40px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.instagram-icon img:hover {
+  transform: scale(1.1); /* ホバー時に少し大きく */
 }
 
 /* レスポンシブ対応（オプション） */
